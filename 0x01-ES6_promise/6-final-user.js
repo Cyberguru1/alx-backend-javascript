@@ -7,6 +7,7 @@ export default async function handleProfileSignup(
   fileName,
 ) {
   const res = [];
+
   try {
     const user = await signUpUser(firstName, lastName);
     res.push({ status: 'fulfilled', value: user });
