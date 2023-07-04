@@ -1,7 +1,7 @@
 // function that returns an array of students for 
 // a specific city
 
-export function updateStudentGradeByCity(students, city, newGrades){
+function updateStudentGradeByCity(students, city, newGrades){
   filterd_list = students.filter((x) => x.city == city);
   return filterd_list.map((stud) => {
     const filteredGrade = newGrades.filter((grade) => grade.studentId == stud.Id);
