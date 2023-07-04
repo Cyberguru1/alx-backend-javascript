@@ -1,8 +1,6 @@
 // function that retuns an array of objects
 
 export function getListStudentsByLocation(students, city){
-  // adding items
-  result = students.filter((x) => x.location == city);
-  return result;
+  return students.filter((x) => x.location == city);
 }
 export default getListStudentsByLocation;
