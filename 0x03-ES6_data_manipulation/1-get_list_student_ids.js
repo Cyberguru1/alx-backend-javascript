@@ -1,9 +1,12 @@
 // function that retuns ids from a list of objects
 
-export function getListStudentIds(arr){
-  if (!([] instanceof arr )){
-    return [];
+const getListStudentIds = (listStudents) => {
+  let listStudentIds = [];
+  if (!(listStudents instanceof Array)) {
+    return listStudentIds;
   }
-  return arr.map((x) => x.id);
-}
+  listStudentIds = listStudents.map((student) => student.id);
+  return listStudentIds;
+};
+
 export default getListStudentIds;
