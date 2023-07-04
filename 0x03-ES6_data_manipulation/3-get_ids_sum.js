@@ -3,3 +3,5 @@
 export function getStudentIdsSum(students){
   return students.reduce((t, x) => t + x, 0);  
 }
+
+export default getStudentIdsSum;
