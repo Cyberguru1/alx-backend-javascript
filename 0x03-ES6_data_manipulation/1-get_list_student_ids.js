@@ -1,5 +1,8 @@
 // function that retuns ids from a list of objects
 
 export function getListStudentIds(arr){
-  return arr.map((x) => x.id)
+  if (typeof [] != typeof arr ){
+    return [];
+  }
+  return arr.map((x) => x.id);
 }
