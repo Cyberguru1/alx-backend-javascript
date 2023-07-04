@@ -2,6 +2,7 @@
 
 export function getListStudentsByLocation(students, city){
   // adding items
-  result = students.filter((x) => x.city == city);
+  result = students.filter((x) => x.location == city);
   return result;
 }
+export default getListStudentsByLocation;
