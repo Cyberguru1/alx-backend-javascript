@@ -8,7 +8,7 @@ const cleanSet = (set, starts) => {
       str.push(s.slice(starts.length));
     }
   });
-	return str.join('-');
-}
+  return str.join('-');
+};
 
 export default cleanSet;
