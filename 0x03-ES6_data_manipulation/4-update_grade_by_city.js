@@ -1,20 +1,20 @@
-// function that returns an array of students for 
+// function that returns an array of students for
 // a specific city
 
-function updateStudentGradeByCity(students, city, newGrades){
-  filterd_list = students.filter((x) => x.city == city);
-  return filterd_list.map((stud) => {
-    const filteredGrade = newGrades.filter((grade) => grade.studentId == stud.Id);
+function updateStudentGradeByCity(students, city, newGrades) {
+  const filterdList = students.filter((x) => x.city === city);
+  return filterdList.map((stud) => {
+    const filteredGrade = newGrades.filter((grade) => grade.studentId === stud.id);
     if (filteredGrade.length > 0) {
       return {
         ...stud,
-        grade:filteredGrade[0]['grade']
+        grade: filteredGrade[0].grade,
       };
     }
     return {
-        ...stud,
-        grade: "N/A"
-      };
+      ...stud,
+      grade: 'N/A',
+    };
   });
 }
 
