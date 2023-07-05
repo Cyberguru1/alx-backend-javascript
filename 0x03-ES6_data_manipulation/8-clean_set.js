@@ -1,6 +1,6 @@
 // function to perform
 
-cleanSet = (set, starts) => {
+const cleanSet = (set, starts) => {
   const str = [];
   if (starts === '' || typeof starts !== 'string') return '';
   set.ForEach((s) => {
