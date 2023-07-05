@@ -77,8 +77,19 @@ console.log(executeWork(createEmployee(1000)));
 
 // task 7
 
-type Subject = "math" | "Histroy";
+type Subject = "Math" | "History";
 
-const teachClass(todayClass: Subject): string => {
-  if (typeof)
+const teachClass = (todayClass: Subject): string => {
+  if (todayClass === "Math"){
+    return "Teaching Math";
+  }
+  return "Teaching Histroy";
 }
+
+console.log(teachClass('Math'));
+// output
+// Teaching Math
+
+console.log(teachClass('History'));
+// output
+// Teaching History
