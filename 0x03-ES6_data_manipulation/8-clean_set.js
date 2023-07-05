@@ -3,7 +3,7 @@
 const cleanSet = (set, starts) => {
   const str = [];
   if (starts === '' || typeof starts !== 'string') return '';
-  set.ForEach((s) => {
+  set.forEach((s) => {
     if (typeof s === 'string' && s.startsWith(starts)) {
       str.push(s.slice(starts.length));
     }
